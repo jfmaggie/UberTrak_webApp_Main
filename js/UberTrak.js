@@ -23,7 +23,7 @@ app.config(function ($routeProvider) {
 
 app.controller('cfgController', function ($scope) {
 
-    /*      
+    /*
     Here you can handle controller for specific route as well.
     */
 
@@ -39,7 +39,7 @@ app.controller('statCtrl', function ($scope) {
                 text: "Ride time"
             },
             animationEnabled: true,
-            axisY:{    
+            axisY: {
                 suffix: " Minutes"
             },
             axisX: {

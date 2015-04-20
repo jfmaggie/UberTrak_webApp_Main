@@ -3,7 +3,7 @@
     <p>Statistics page.</p>
     <p>
         This is executed because of this code.
-  
+
         <pre>
      <code>
        .when('/stat',{
@@ -14,4 +14,22 @@
     </p>
 
     <div id="chartContainer"></div>
+    <div class="rideTimeHistory"></div>
+
+    <div class="uberjsonfiletestingmz" ng-repeat="obj in uberjsonfile.days">
+      <div class="weekday col-md-4">
+        <p>{{ obj.datetime | date }}</p>
+      </div>
+      <div class="weather col-md-3">
+        <img ng-src="{{ obj.icon }}">
+      </div>
+      <div class="weather col-md-1">
+      </div>
+      <div class="high col-md-2">
+        <p>{{ obj.high }}&deg;</p>
+      </div>
+      <div class="low col-md-2">
+        <p>{{ obj.low }}&deg;</p>
+      </div>
+    </div>
 </div>
