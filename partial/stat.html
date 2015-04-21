@@ -1,35 +1,39 @@
-﻿<div style="padding-left: 130px; padding-right: 200px;">
+﻿<div class="container">
     <h1>Statistics page.</h1>
     <p>Statistics page.</p>
     <p>
         This is executed because of this code.
 
-        <pre>
+    <pre>
      <code>
        .when('/stat',{
              templateURl: 'partial/stat.html'
        })
      </code>
-   </pre>
+    </pre>
     </p>
 
-    <div id="chartContainer"></div>
-    <div class="rideTimeHistory"></div>
+    <div class="chartContainer row"></div>
+    <br>
 
-    <div class="uberjsonfiletestingmz" ng-repeat="obj in uberjsonfile.days">
-      <div class="weekday col-md-4">
+    <!-- display json file info below -->
+    <div class="rideTimeHistory row">
+
+    <div class="uberjsonfiletestingmz row" ng-repeat="obj in uberjsonfile.days">
+      <div class="weekday col-md-3">
         <p>{{ obj.datetime | date }}</p>
       </div>
       <div class="weather col-md-3">
         <img ng-src="{{ obj.icon }}">
       </div>
-      <div class="weather col-md-1">
-      </div>
-      <div class="high col-md-2">
+
+      <div class="high col-md-3">
         <p>{{ obj.high }}&deg;</p>
       </div>
-      <div class="low col-md-2">
+      <div class="low col-md-3">
         <p>{{ obj.low }}&deg;</p>
       </div>
+    </div>
+
     </div>
 </div>
