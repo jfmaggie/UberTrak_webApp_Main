@@ -1,19 +1,44 @@
-﻿<div class="col-sm-3 col-md-2 sidebar">
-  <ul class="nav nav-sidebar">
-    <li class="active">
-        <a ui-sref=".statDefault">
-          Overview
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li><a ui-sref=".rideTime">
-          Ride Time
-      </a>
-    </li>
-  </ul>
-</div>
+﻿<div class="container-fluid">
 
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-  <div ui-view></div>
-</div>
+  <div class="row">
 
+    <div class="col-lg-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active">
+          <a ui-sref="stat">
+            Overview
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref=".rideTime">
+            Ride Time
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-10 main">
+      <div ui-view >
+        <div style="padding-left: 10px; padding-right: 100px;">
+
+          <h1>Statistics page.</h1>
+          <p>Statistics page.</p>
+          <p>
+            This is executed because of this code.
+
+            <pre>
+             <code>
+               .when('/stat',{
+               templateURl: 'partial/stat.html'
+             })
+           </code>
+         </pre>
+       </p>
+     </div>
+
+   </div>
+    </div>
+
+  </div>
+</div>

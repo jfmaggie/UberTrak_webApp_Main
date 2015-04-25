@@ -19,10 +19,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/profile',
             templateUrl: 'partial/profile.html'
         })
-        .state('stat.statDefault', {
+/*        .state('stat.statDefault', {
             url: '/statDefault',
-            templateUrl: 'partial/statDefault.html'
+            templateUrl: 'partial/stat.html'
         })
+ */
         .state('stat.rideTime', {
             url: '/rideTime',
             templateUrl: 'partial/rideTime.html'
