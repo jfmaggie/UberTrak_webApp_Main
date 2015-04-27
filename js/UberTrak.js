@@ -32,6 +32,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/rideTime',
             templateUrl: 'partial/rideTime.html'
         })
+        .state('stat.rideHistory', {
+            url: '/rideHistory',
+            templateUrl: 'partial/rideHistory.html',
+            controller: 'rideHistoryCtrl'
+        })
         .state('home',{
             url: '/home',
             templateUrl: 'partial/home.html'
@@ -59,6 +64,10 @@ app.controller('aboutCtrl', function ($scope) {
 app.controller('profileCtrl', function ($scope) {
     console.log('PageProfile');
 });
+
+app.controller('statCtrl', function ($scope) {
+    console.log('StatPage');
+})
 
 /*
 app

@@ -16,6 +16,11 @@
             Ride Time
           </a>
         </li>
+        <li>
+          <a ui-sref=".rideHistory">
+            Ride History
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -28,43 +33,11 @@
           <p>
             This is executed because of this code.
 
-            <pre>
-             <code>
-               .when('/stat',{
-               templateURl: 'partial/stat.html'
-             })
-           </code>
-         </pre>
-       </p>
-
-       <div class="chartContainer row"></div>
-       <br>
-
-       <!-- display json file info below -->
-       <div class="rideTimeHistory row">
-
-        <div class="uberjsonfiletestingmz row" ng-repeat="obj in uberjsonfile.days">
-          <div class="weekday col-md-3">
-            <p>{{ obj.datetime | date }}</p>
-          </div>
-          <div class="weather col-md-3">
-            <img ng-src="{{ obj.icon }}">
-          </div>
-
-          <div class="high col-md-3">
-            <p>{{ obj.high }}&deg;</p>
-          </div>
-          <div class="low col-md-3">
-            <p>{{ obj.low }}&deg;</p>
-          </div>
+          </p>
         </div>
-
       </div>
-
     </div>
-
   </div>
-</div>
 
 </div>
-</div>
+
