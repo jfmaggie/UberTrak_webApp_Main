@@ -32,6 +32,8 @@ app.controller('statCtrl', ['$scope', 'ridehistory', function ($scope, ridehisto
             }
             ]
         };
+    });
+
     // Sample Json Object returned here temporarily
 
     $scope.userHistory =
