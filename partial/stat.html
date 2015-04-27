@@ -1,3 +1,4 @@
+
 ﻿<div class="container-fluid">
 
   <div class="row">
@@ -35,10 +36,35 @@
            </code>
          </pre>
        </p>
-     </div>
 
-   </div>
+       <div class="chartContainer row"></div>
+       <br>
+
+       <!-- display json file info below -->
+       <div class="rideTimeHistory row">
+
+        <div class="uberjsonfiletestingmz row" ng-repeat="obj in uberjsonfile.days">
+          <div class="weekday col-md-3">
+            <p>{{ obj.datetime | date }}</p>
+          </div>
+          <div class="weather col-md-3">
+            <img ng-src="{{ obj.icon }}">
+          </div>
+
+          <div class="high col-md-3">
+            <p>{{ obj.high }}&deg;</p>
+          </div>
+          <div class="low col-md-3">
+            <p>{{ obj.low }}&deg;</p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
+</div>
+
+</div>
 </div>

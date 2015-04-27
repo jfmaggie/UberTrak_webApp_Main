@@ -4,20 +4,24 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
     $stateProvider
         .state('index', {
-            url: '/index'
-            //templateUrl: 'partial/home.html'
+            url: '/index',
+            templateUrl: 'partial/home.html',
+            controller:'homeCtrl'
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'partial/about.html'
+            templateUrl: 'partial/about.html',
+            controller: 'aboutCtrl'
         })
         .state('stat', {
             url: '/stat',
-            templateUrl: 'partial/stat.html'
+            templateUrl: 'partial/stat.html',
+            controller: 'statCtrl'
         })
         .state('profile', {
             url: '/profile',
-            templateUrl: 'partial/profile.html'
+            templateUrl: 'partial/profile.html',
+            controller: 'profileCtrl'
         })
 /*        .state('stat.statDefault', {
             url: '/statDefault',
@@ -42,8 +46,18 @@ app.controller('cfgController', function ($scope) {
     Here you can handle controller for specific route as well.
     */
 
+});
 
+app.controller('homeCtrl', function ($scope) {
+    console.log('PageHome');
+});
 
+app.controller('aboutCtrl', function ($scope) {
+    console.log('PageAbout');
+});
+
+app.controller('profileCtrl', function ($scope) {
+    console.log('PageProfile');
 });
 
 /*
@@ -139,3 +153,4 @@ app
         });
       }}}])
 */
+
