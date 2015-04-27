@@ -1,4 +1,4 @@
-app.controller('statCtrl', ['$scope', 'ridehistory', function ($scope, ridehistory) {
+app.controller('rideHistoryCtrl', ['$scope', 'ridehistory', function ($scope, ridehistory) {
     console.log('PageStat');
 
     // Sample Json Object returned here temporarily
