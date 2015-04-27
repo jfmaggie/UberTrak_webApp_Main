@@ -1,6 +1,6 @@
 app.controller('statCtrl', ['$scope', 'ridehistory', function ($scope, ridehistory) {
 
-    // drawing char with canvasJS
+    // drawing char with canvasJS -- Qilong
     console.log('PageStat');
     // e.g. Spline Chart using jQuery Plugin
     $(function () {
