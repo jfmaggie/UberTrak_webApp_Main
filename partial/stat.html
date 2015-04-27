@@ -1,39 +1,43 @@
-﻿<div class="container">
-    <h1>Statistics page.</h1>
-    <p>Statistics page.</p>
-    <p>
-        This is executed because of this code.
 
-    <pre>
-     <code>
-       .when('/stat',{
-             templateURl: 'partial/stat.html'
-       })
-     </code>
-    </pre>
-    </p>
+﻿<div class="container-fluid">
 
-    <div class="chartContainer row"></div>
-    <br>
+  <div class="row">
 
-    <!-- display json file info below -->
-    <div class="rideTimeHistory row">
-
-    <div class="uberjsonfiletestingmz row" ng-repeat="obj in uberjsonfile.days">
-      <div class="weekday col-md-3">
-        <p>{{ obj.datetime | date }}</p>
-      </div>
-      <div class="weather col-md-3">
-        <img ng-src="{{ obj.icon }}">
-      </div>
-
-      <div class="high col-md-3">
-        <p>{{ obj.high }}&deg;</p>
-      </div>
-      <div class="low col-md-3">
-        <p>{{ obj.low }}&deg;</p>
-      </div>
+    <div class="col-lg-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active">
+          <a ui-sref="stat">
+            Overview
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref=".rideTime">
+            Ride Time
+          </a>
+        </li>
+        <li>
+          <a ui-sref=".rideHistory">
+            Ride History
+          </a>
+        </li>
+      </ul>
     </div>
 
+    <div class="col-lg-10 main">
+      <div ui-view >
+        <div style="padding-left: 10px; padding-right: 100px;">
+
+          <h1>Statistics page.</h1>
+          <p>Statistics page.</p>
+          <p>
+            This is executed because of this code.
+
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+
 </div>
+
