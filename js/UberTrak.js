@@ -2,6 +2,7 @@ var app = angular.module('single-page-app', ['ngRoute']);
 
 app.config(function ($routeProvider) {
     $routeProvider
+
         .when('/', {
             templateUrl: 'partial/home.html',
             controller: 'homeCtrl'
@@ -22,18 +23,18 @@ app.config(function ($routeProvider) {
 
 
 app.controller('cfgController', function ($scope) {
-
-    /*
+  /*
     Here you can handle controller for specific route as well.
     */
 
 });
+/*
+app.controller('statCtrl', function ($scope) {
 
-// rewrite as a service
-// app.controller('statCtrl', function ($scope) {
 
-// });
 
+});
+*/
 app.controller('homeCtrl', function ($scope) {
     console.log('PageHome');
 });
