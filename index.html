@@ -18,44 +18,42 @@
         <div>
             <nav class="navbar navbar-inverse" role="navigation" style="padding-left: 130px;">
                 <ul class="nav navbar-nav">
-                    <li ><a ui-sref="home">Home<span class="sr-only">(current)</span></a></li>
-                    <li>
-                        <a ui-sref="stat">Statistics</a></li>
-                        <li><a ui-sref="profile">Profile</a></li>
-                        <li><a ui-sref="about">About us</a></li>
-                        <li><a href="signin.html">Log out</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <br />
-
-            <div ui-view class="jumbotron">
-             
-            </div>
+                    <li><a ui-sref="home">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a ui-sref="stat">Statistics</a></li>
+                    <li><a ui-sref="profile">Profile</a></li>
+                    <li><a ui-sref="about">About us</a></li>
+                    <li><a href="signin.html">Log out</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/jquery.canvasjs.min.js"></script>
-        <!-- AngularJs -->
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+        <br />
+        <div ui-view class="jumbotron">
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.canvasjs.min.js"></script>
+    <!-- AngularJs -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
 
-        <!-- UI-Router -->
-        <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-        <!--Lingyu WIP-->
-        <!--script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script-->
+    <!-- UI-Router -->
+    <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <!--Lingyu WIP-->
+    <!--script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script-->
 
-        <!-- Controller -->
-        <script src="js/UberTrak.js"></script>
-        <script src="js/controller/RideHistoryController.js"></script>
-
-
-        <!-- Services: rideHistory by Meichen -->
-        <script src="js/services/rideHistory.js"></script>
-
-        <!-- Directives if needed -->
+    <!-- Controller -->
+    <script src="js/UberTrak.js"></script>
+    <script src="js/controller/RideHistoryController.js"></script>
+    <script src="js/controller/RiderProfileController.js"></script>
 
 
-    </body>
-    </html>
+    <!-- Services: rideHistory by Meichen -->
+    <script src="js/services/rideHistory.js"></script>
+
+    <!-- Directives if needed -->
+
+
+</body>
+</html>
 
