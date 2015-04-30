@@ -48,8 +48,9 @@ app.controller('rideHistoryCtrl', ['$scope', 'ridehistory', function ($scope, ri
         // Initialize dataPoints from Json Object
         var dataPoints = [];
         for (var i = 0; i < $scope.userHistory.count; i++) {
-            if (historyItem.status == "completed")
-                dataPoints.push({ x: new Date(historyItem.request_time), y: historyItem.distance });
+           var historyItem = $scope.userHistory.history[i];
+           if (historyItem.status == "completed")
+              dataPoints.push({ x: new Date(historyItem.request_time*1000), y: historyItem.distance });
         }
 
         //Better to construct options first and then pass it as a parameter
