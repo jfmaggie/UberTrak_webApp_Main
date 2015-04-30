@@ -26,7 +26,7 @@ app.controller('rideHistoryCtrl', ['$scope', 'ridehistory', function ($scope, ri
               {
                   "status": "completed",
                   "distance": 2.64691465,
-                  "request_time": 1428897600,
+                  "request_time": 1431360364,
                   "start_time": 1428897780,
                   "start_city": {
                       "latitude": 37.7749295,
@@ -48,7 +48,6 @@ app.controller('rideHistoryCtrl', ['$scope', 'ridehistory', function ($scope, ri
         // Initialize dataPoints from Json Object
         var dataPoints = [];
         for (var i = 0; i < $scope.userHistory.count; i++) {
-            var historyItem = $scope.userHistory.history[i];
             if (historyItem.status == "completed")
                 dataPoints.push({ x: new Date(historyItem.request_time), y: historyItem.distance });
         }
