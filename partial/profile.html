@@ -1,15 +1,20 @@
 ﻿<div style="padding-left: 130px; padding-right: 200px;">
-    <h1>Profile page.</h1>
-    <p>Profile page.</p>
-    <p>
-        This is executed because of this code.
-  
-        <pre>
-     <code>
-       .when('/profile',{
-             templateURl: 'partial/profile.html'
-       })
-     </code>
-   </pre>
-    </p>
+    <div class="row">
+        <div class="col-sm-10">
+            <h1 class="">{{userProfile.first_name}}</h1>
+        </div>
+        <div class="col-sm-2">
+            <a href="/users" class="pull-right">
+                <img title="profile image" class="img-circle img-responsive" src="{{userProfile.picture}}"></a>
+
+        </div>
+    </div>
+    <br class="">
+    <div class="col-sm-3">
+        <ul class="list-group">
+            <li class="list-group-item text-muted">Profile</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong class="">Fav location:</strong></span> TBD</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last ride:</strong></span> TBD</li>
+        </ul>
+    </div>
 </div>

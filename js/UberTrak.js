@@ -61,10 +61,6 @@ app.controller('aboutCtrl', function ($scope) {
     console.log('PageAbout');
 });
 
-app.controller('profileCtrl', function ($scope) {
-    console.log('PageProfile');
-});
-
 app.controller('statCtrl', function ($scope) {
     console.log('StatPage');
 })
